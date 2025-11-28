@@ -17,7 +17,8 @@ function getDatas(maxsulot){
         const child = document.createElement("div")
 
         child.innerHTML =` <div class="card">
-        <img src="${items.images[0]}" alt="">
+        <a href="./single.html?card-id=${items.id}"><img src="${items.images[0]}" alt=""></a>
+        
         <h3>${items.title}</h3>
         <strong>${items.price}</strong>
         <p>${items.rating}</p>

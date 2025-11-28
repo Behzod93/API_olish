@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single_pg</title>
+    <style>
+        .single{
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .single > img{
+            width: 250px;
+            height: 200px;
+        }
+        .singleModal{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 5px;
+
+        }
+        .position{
+            position: relative;
+        }
+        .delete{
+            position: absolute;
+            top: 5px;
+            left: 470px;
+        }
+        .update{
+            position: absolute;
+            top: 5px;
+            left: 435px;
+        }
+    </style>
+</head>
+<body><a href="index.html"><h1>Dummy</h1> </a>
+    <div class="singleModal">
+        <input type="text" class="text" placeholder="Rasm Link kriting">
+        <input type="text" class="text" placeholder="Nom bering">
+        <input type="text" class="text" placeholder="Tarif bering">
+        <button>Send </button>
+        </div>
+
+    <div class="single">
+        <div class="position">
+            <button class="update">🖋</button>
+        <button class="delete">🗑</button>
+            </div>
+       
+        <img src="" alt="" class="img">
+        <div class="body">
+            <h1 class="tit"></h1>
+            <p class="text"></p>
+        </div>
+    </div>
+
+   <script src="single.js"></script>
+</body>
+</html>
