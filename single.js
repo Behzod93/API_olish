@@ -9,7 +9,8 @@ let update = document.querySelector(".update");
 let modal = document.querySelector(".singleModal");
 
 update.addEventListener("click", () => {
-    modal.classList.add("active");
+    modal.classList.remove("singleModal")
+    modal.classList.add("singleModal");
 });
 
 try {
@@ -21,7 +22,7 @@ try {
 }
 
 function getData(data) {
-    img.src = data.images[0];
-    title.innerHTML = data.title;
-    text.innerHTML = data.description;
+    img.src = `${data.images[0]}`;
+    title.innerHTML = `${data.title}`;
+    text.innerHTML = `${data.description}`;
 };
